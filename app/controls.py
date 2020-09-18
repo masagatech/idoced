@@ -31,6 +31,7 @@ class Controls(object):
             self.pdf.image('icons/check.png', self.pixel_to_mm(style['left']), self.pixel_to_mm(self.top_fix(style['top'])),
                        self.pixel_to_mm(20), self.pixel_to_mm(20), 'PNG', '')
 
+    #Radio Button
     def radio(self, control):
         style = control['style']
         if 'val' in control and 'value' in control['dataset']  and control['val'] == control['dataset']['value']:
